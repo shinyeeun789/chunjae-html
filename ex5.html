@@ -12,10 +12,18 @@
     <img src="./img/img1.jpg" alt="강아지" title="귀여워">
     <hr>
     <h3> 오디오 </h3>
-    <audio src="./sound/sample1.mp3" controls autoplay muted></audio>
+    <audio controls autoplay muted>
+        <source src="./sound/ditto.mp3" type="audio/mp3">
+        <source src="./sound/ditto.ogg" type="audio/ogg">
+        <source src="./sound/ditto.wav" type="audio/wav">
+    </audio>
     <hr>
     <h3> 비디오 </h3>
-    <video src="./movie/ditto.mp4" controls autoplay muted></video>
+    <video poster="./img/img2.jpg" controls loop muted>
+        <source src="./movie/ditto.mp4" type="video/mp4">
+        <source src="./movie/ditto.ogv" type="video/ogg">
+        <source src="./movie/ditto.webm" type="video.webm">
+    </video>
     <hr>
     <h3> iframe 요소 </h3>
     <iframe width="1280" height="720" src="https://www.youtube.com/embed/x6i3_LfeTjY" 
